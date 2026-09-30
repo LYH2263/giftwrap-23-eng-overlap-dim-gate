@@ -1,0 +1,20 @@
+{
+  "box_name": "书型盒",
+  "baseline": {
+    "overlap": 1.15,
+    "length": 0.30,
+    "width": 0.20,
+    "height": 0.15,
+    "box_surface": 0.27,
+    "paper_m2": 0.31
+  },
+  "raised_overlap": 1.30,
+  "raised_height": 0.18,
+  "checks": {
+    "raised_overlap_paper_m2": 0.351,
+    "raised_height_paper_m2": 0.39,
+    "restored_paper_m2": 0.31,
+    "height_delta_paper": 0.039
+  },
+  "tol": 1e-9
+}

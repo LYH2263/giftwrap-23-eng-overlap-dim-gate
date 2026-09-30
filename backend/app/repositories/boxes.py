@@ -14,3 +14,16 @@ def get_box(bid):
         return dict(r) if r else None
     finally:
         c.close()
+
+
+def update_dimensions(bid, length, width, height):
+    c = connect()
+    try:
+        cur = c.execute(
+            "UPDATE boxes SET length=?, width=?, height=? WHERE id=?",
+            (float(length), float(width), float(height), bid),
+        )
+        c.commit()
+        return cur.rowcount
+    finally:
+        c.close()
