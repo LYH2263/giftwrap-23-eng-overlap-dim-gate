@@ -12,3 +12,15 @@ def get_all():
 
 def get_overlap():
     return float(get_all().get("overlap", DEFAULT_OVERLAP))
+
+def set_overlap(value: float):
+    c = connect()
+    try:
+        c.execute(
+            "INSERT INTO settings(key,value) VALUES ('overlap',?) "
+            "ON CONFLICT(key) DO UPDATE SET value=excluded.value",
+            (str(float(value)),),
+        )
+        c.commit()
+    finally:
+        c.close()

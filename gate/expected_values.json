@@ -1,0 +1,31 @@
+{
+  "_meta": "书型盒种子三边 0.30x0.20x0.15；paper_m2 = round(2*(L*W + L*H + W*H) * overlap, 3)。所有 paper_m2 为算纸接口读数的期望值。",
+  "box_name": "书型盒",
+  "baseline": {
+    "overlap": 1.15,
+    "length": 0.30,
+    "width": 0.20,
+    "height": 0.15,
+    "box_surface": 0.27,
+    "paper_m2": 0.31
+  },
+  "raised_overlap": {
+    "overlap": 1.25,
+    "paper_m2": 0.338
+  },
+  "raised_height": {
+    "overlap": 1.25,
+    "length": 0.30,
+    "width": 0.20,
+    "height": 0.18,
+    "box_surface": 0.30,
+    "paper_m2": 0.375
+  },
+  "restored": {
+    "overlap": 1.15,
+    "length": 0.30,
+    "width": 0.20,
+    "height": 0.15,
+    "paper_m2": 0.31
+  }
+}
